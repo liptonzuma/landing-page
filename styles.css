@@ -194,4 +194,7 @@ html {
     .info {
         color: white;
     }
+    #nav-bar {
+        position: relative;
+    }
 }
