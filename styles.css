@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#nav-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    background-color: white;
+    z-index: 2;
+    line-height: 40px;
+}
+
+#nav-bar ul {
+    float: right;
+}
+
+#nav-bar ul li {
+    float: left;
+    margin-right: 10px;
+    list-style: none;
+    font-family: monospace;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    transition: 500ms;
+}
+
+.nav-link:hover {
+    color: palevioletred;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+#home {
+    background: url(./images/bg\ go.jpg) no-repeat center fixed;
+    height: 700px;
+}
+
+.info {
+    padding-top: 300px;
+    padding-left: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.info button {
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    transition: 500ms;
+    background: transparent;
+    margin-top: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.info button:hover {
+    border: none;
+    background-color: palevioletred;
+}
+
+#form {
+    padding: 20px 50px;
+}
+
+#email {
+    width: 60%;
+    padding: 8px;
+    height: 30px;
+    font-family: sans-serif;
+    border: 2px solid limegreen;
+    border-radius: 18px;
+    font-size: 17px;
+}
+
+#submit {
+    width: 100px;
+    height: 48px;
+    font-family: sans-serif;
+    font-size: 17px;
+    border: 2px solid limegreen;
+    background-color: transparent;
+    border-radius: 20px;
+    color: limegreen;
+    transition: 400ms;
+}
+
+#submit:hover {
+    border: none;
+    background-color: limegreen;
+    color: white;
+}
+
+.service {
+    border-bottom: 2px solid rgba(25, 25, 26, 0.7);
+}
+
+#service {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+#service figcaption p {
+    font-size: 18px;
+    font-style: oblique;
+}
+
+#service figure {
+    margin: 10px 20px;
+}
+
+#service figcaption button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: palevioletred;
+    margin-top: 10px;
+}
+
+#service h1 {
+    text-align: right;
+    text-transform: uppercase;
+    display: block;
+}
+
+#video {
+    padding: 40px;
+    width: 768px;
+    height: auto;
+}
+
+#about {
+    background: rgba(79, 78, 80, 0.5);
+    color: rgba(8, 7, 8, 0.8);
+    padding: 10px;
+}
+
+#about .list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list li {
+    list-style: none;
+}
+
+.about h2 {
+    font-weight: 300;
+}
+
+.about a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgba(25, 25, 26, 0.7);
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 50px;
+}
+
+@media( max-width: 768px) {
+    #home {
+        background-image: url(./images/about.jpg);
+        overflow: hidden;
+    }
+    .info {
+        color: white;
+    }
+}
